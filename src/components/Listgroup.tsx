@@ -11,6 +11,7 @@ function Listgroup (){
     return(
         <div>
             <h2>Lists</h2>
+            {items.length === 0 && <p>No item found</p>}
             <ul className="list-group">
                 {
                     items.map(item => (
