@@ -4,9 +4,17 @@ import './App.css'
 
 function App() {
 
+  const items = [
+    'New York',
+    'San Farnsico',
+    'Tokyo',
+    'London',
+    'Paris'
+]
+
   return (
     <>
-      <Listgroup/>
+      <Listgroup items={items} heading='Cities'/>
     </>
   )
 }
