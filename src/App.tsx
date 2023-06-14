@@ -12,9 +12,13 @@ function App() {
     'Paris'
 ]
 
+const handleSelectItme = (item:string) => {
+    console.log(item)
+}
+
   return (
     <>
-      <Listgroup items={items} heading='Cities'/>
+      <Listgroup items={items} heading='Cities' onSelectItme={handleSelectItme}/>
     </>
   )
 }
