@@ -23,6 +23,8 @@ function App() {
 
   */
 
+   const [alertVisible, setAlertVisibilty] = useState(false)
+
   return (
     <>
       {/* list group  */}
@@ -34,7 +36,8 @@ function App() {
         <span> Code mosh</span>  
       </Alert> */}
 
-      <Button color='primary' onClickBtn={() => console.log('clicked')}>My button</Button>
+     {alertVisible && <Alert onClose={() => setAlertVisibilty(false)}>My Alert</Alert>}
+      <Button color='primary' onClickBtn={() => setAlertVisibilty(true)}>My button</Button>
     </>
   )
 }
