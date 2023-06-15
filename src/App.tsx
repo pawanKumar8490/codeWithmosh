@@ -1,24 +1,37 @@
 import { useState } from 'react'
-import Listgroup from './components/Listgroup';
+// import Listgroup from './components/Listgroup';
+import Alert from './components/alert'
 import './App.css'
 
 function App() {
 
-  const items = [
-    'New York',
-    'San Farnsico',
-    'Tokyo',
-    'London',
-    'Paris'
-]
+  /* 
+  list group working
+  
+    const items = [
+      'New York',
+      'San Farnsico',
+      'Tokyo',
+      'London',
+      'Paris'
+    ]
 
-const handleSelectItme = (item:string) => {
-    console.log(item)
-}
+    const handleSelectItme = (item:string) => {
+        console.log(item)
+    }
+
+  */
 
   return (
     <>
-      <Listgroup items={items} heading='Cities' onSelectItme={handleSelectItme}/>
+      {/* list group  */}
+      {/* <Listgroup items={items} heading='Cities' onSelectItme={handleSelectItme}/> */} 
+
+      {/* alert component */}
+      <Alert>
+        Hello childern 
+        <span>Alert</span>  
+      </Alert>
     </>
   )
 }
