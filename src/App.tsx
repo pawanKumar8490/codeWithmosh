@@ -1,7 +1,8 @@
 import { useState } from 'react'
 // import Listgroup from './components/Listgroup';
-import Alert from './components/alert'
+import Alert from './components/alert';
 import './App.css'
+import Button from './components/button';
 
 function App() {
 
@@ -28,10 +29,12 @@ function App() {
       {/* <Listgroup items={items} heading='Cities' onSelectItme={handleSelectItme}/> */} 
 
       {/* alert component */}
-      <Alert>
+      {/* <Alert>
         Hello childern 
-        <span>Alert</span>  
-      </Alert>
+        <span> Code mosh</span>  
+      </Alert> */}
+
+      <Button color='primary' onClickBtn={() => console.log('clicked')}>My button</Button>
     </>
   )
 }
