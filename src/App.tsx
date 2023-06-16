@@ -1,13 +1,16 @@
 import { useState } from 'react'
 // import Listgroup from './components/Listgroup';
-import Alert from './components/alert';
+
 import './App.css'
-import Button from './components/button';
+import Alert from './components/Alert'
+import Button from './components/Button'
+import Listgroup from './components/Listgroup'
+
 
 function App() {
 
-  /* 
-  list group working
+   
+  
   
     const items = [
       'New York',
@@ -21,14 +24,14 @@ function App() {
         console.log(item)
     }
 
-  */
+  
 
    const [alertVisible, setAlertVisibilty] = useState(false)
 
   return (
     <>
       {/* list group  */}
-      {/* <Listgroup items={items} heading='Cities' onSelectItme={handleSelectItme}/> */} 
+      <Listgroup items={items} heading='Cities' onSelectItme={handleSelectItme}/> 
 
       {/* alert component */}
       {/* <Alert>
@@ -36,8 +39,8 @@ function App() {
         <span> Code mosh</span>  
       </Alert> */}
 
-     {alertVisible && <Alert onClose={() => setAlertVisibilty(false)}>My Alert</Alert>}
-      <Button color='primary' onClickBtn={() => setAlertVisibilty(true)}>My button</Button>
+     {/* {alertVisible && <Alert onClose={() => setAlertVisibilty(false)}>My Alert</Alert>}
+      <Button color='primary' onClickBtn={() => setAlertVisibilty(true)}>My button</Button> */}
     </>
   )
 }
